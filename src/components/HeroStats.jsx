@@ -43,7 +43,7 @@ export default function HeroStats() {
   const stats = [
     {
       id: 1,
-      target: 11,
+      target: 15,
       suffix: "+",
       title: "Years in Abu Dhabi",
       subtitle: "Engineering & Contracting Excellence"

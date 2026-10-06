@@ -57,20 +57,46 @@ export default function Navbar({ onOpenQuoteModal }) {
   const [isServicesFlyoutOpen, setIsServicesFlyoutOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
+    let scrollTimer = null;
+
+    // Show navbar initially for 2.5s on load / route change
+    setIsScrolling(true);
+    scrollTimer = setTimeout(() => {
+      setIsScrolling(false);
+    }, 2500);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      setIsScrolling(true);
+
+      if (scrollTimer) {
+        clearTimeout(scrollTimer);
+      }
+
+      // Hide vertical navbar 1.8 seconds after user stops scrolling
+      scrollTimer = setTimeout(() => {
+        setIsScrolling(false);
+      }, 1800);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimer) clearTimeout(scrollTimer);
+    };
+  }, [location.pathname]);
 
   useEffect(() => {
     setIsMobileOpen(false);
     setIsServicesFlyoutOpen(false);
   }, [location]);
+
+  const isVerticalNavVisible = isScrolling || isHovered || isServicesFlyoutOpen;
 
   const navLinks = [
     { name: 'Home', path: '/', icon: Home },
@@ -164,9 +190,23 @@ export default function Navbar({ onOpenQuoteModal }) {
       </header>
 
       {/* ========================================================================= */}
-      {/* 2. HIGH-VISIBILITY FLOATING VERTICAL DOCK (Icons + Name on Hover + Logo)  */}
+      {/* 2. HIGH-VISIBILITY FLOATING VERTICAL DOCK (Auto-hides when scroll stops) */}
       {/* ========================================================================= */}
-      <aside className="hidden lg:flex fixed right-4 sm:right-6 top-1/2 -translate-y-1/2 z-40 flex-col items-center">
+      {/* Invisible edge hover strip to reveal vertical nav if user moves mouse to the right edge */}
+      <div 
+        className="hidden lg:block fixed right-0 top-0 bottom-0 w-6 z-30 pointer-events-auto"
+        onMouseEnter={() => setIsHovered(true)}
+      />
+
+      <aside 
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className={`hidden lg:flex fixed right-4 sm:right-6 top-1/2 -translate-y-1/2 z-40 flex-col items-center transition-all duration-500 ease-in-out ${
+          isVerticalNavVisible
+            ? 'opacity-100 translate-x-0 pointer-events-auto'
+            : 'opacity-0 translate-x-10 pointer-events-none'
+        }`}
+      >
         <div className="bg-white/98 backdrop-blur-2xl border-2 border-[#D89828] shadow-[0_20px_60px_rgba(0,0,0,0.18),0_0_35px_rgba(216,152,40,0.3)] rounded-3xl p-2 sm:p-2.5 flex flex-col items-center gap-2.5 transition-all duration-300 ring-1 ring-black/5 hover:shadow-[0_25px_70px_rgba(0,0,0,0.25),0_0_45px_rgba(216,152,40,0.4)]">
 
           {/* Top High-Visibility Navbar Logo (3D Pop-out Floating Emblem Badge) */}

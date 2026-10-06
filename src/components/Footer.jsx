@@ -55,7 +55,7 @@ export default function Footer({ onOpenQuoteModal }) {
                 className="flex items-center gap-3 text-neutral-700 hover:text-[#B57C1C] transition-colors"
               >
                 <Mail className="w-4 h-4 text-[#B57C1C] shrink-0" />
-                <span>{COMPANY_INFO.email} / {COMPANY_INFO.secondaryEmail}</span>
+                <span>{COMPANY_INFO.email}</span>
               </a>
 
               <a

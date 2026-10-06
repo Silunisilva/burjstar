@@ -56,6 +56,217 @@ export const PROJECTS = [
     ]
   },
   {
+    id: "kca-villa-external-work",
+    title: "KCA Villa External Work Project",
+    category: "construction",
+    categoryName: "Exterior Civil & Landscaping",
+    location: "Khalifa City A (KCA), Abu Dhabi",
+    client: "Private Residential Client",
+    year: "2025",
+    duration: "4 Weeks",
+    area: "Full Villa Exterior & Boundary Walls",
+    image: "/images/beforenafter/External/a2.webp",
+    featured: true,
+    size: "normal",
+    shortDesc: "Comprehensive exterior restoration, boundary wall construction, modern interlock paving, weather-resistant facade coatings, and outdoor living integration for a luxury private villa in Khalifa City A (KCA), Abu Dhabi.",
+    challenge: "Overhauling weathered exterior surfaces, boundary walls, and uneven ground levels while ensuring zero disruption to villa access and complete protection against harsh desert UV exposure.",
+    solution: "Applied high-grade elastomeric crack sealants, multi-coat Jotashield UV protection, laser-leveled subbase for heavy-duty interlock paving, and integrated landscape MEP drainage.",
+    scope: [
+      "Boundary wall structural civil works & fine plastering",
+      "Jotun Jotashield Extreme UV & weather-resistant facade painting",
+      "Heavy-duty interlocking pavers for driveway and courtyard",
+      "Exterior architectural LED facade & landscape lighting"
+    ],
+    beforeImages: [
+      "/images/beforenafter/External/b2.webp",
+      "/images/beforenafter/External/b3.webp",
+      "/images/beforenafter/External/b4.webp"
+    ],
+    afterImages: [
+      "/images/beforenafter/External/a2.webp",
+      "/images/beforenafter/External/a3.webp"
+    ],
+    beforeVideo: "/images/beforenafter/External/b1.mp4",
+    afterVideo: "/images/beforenafter/External/a1.mp4",
+    videoTitle: "Completed KCA Villa External Walkthrough Video",
+    gallery: [
+      "/images/beforenafter/External/a2.webp",
+      "/images/beforenafter/External/a3.webp",
+      "/images/beforenafter/External/b2.webp",
+      "/images/beforenafter/External/b3.webp",
+      "/images/beforenafter/External/b4.webp"
+    ]
+  },
+  {
+    id: "jubail-island-chandelier-installation",
+    title: "Jubail Island AUH 5MH Chandelier Installation Project",
+    category: "fitout",
+    categoryName: "MEP & Luxury Lighting Fit-Out",
+    location: "Jubail Island, Abu Dhabi",
+    client: "Luxury Villa Residence",
+    year: "2025",
+    duration: "2 Weeks",
+    area: "Double-Height Grand Foyer & Living (5M Height)",
+    image: "/images/beforenafter/Chandelier/ai.webp",
+    featured: true,
+    size: "normal",
+    shortDesc: "Specialized engineering and high-ceiling installation of a monumental 5-meter luxury crystal chandelier in a prestigious private villa on Jubail Island, Abu Dhabi. Included structural ceiling slab reinforcement, motorized winch hoisting mechanism, custom electrical wiring, and multi-tier crystal balancing.",
+    challenge: "Safely mounting and wiring a heavy, multi-tier custom chandelier at an elevated 5-meter ceiling height in a finished high-end foyer without damaging surrounding architectural plaster or delicate marble floors.",
+    solution: "Engineered customized ceiling truss anchors and safety harness scaffolding, integrated an automated lowering winch for future maintenance, and calibrated electrical load distribution.",
+    scope: [
+      "Structural slab load analysis & certified ceiling anchor rigging",
+      "5-Meter high-reach scaffolding & motorized hoist installation",
+      "Dedicated electrical feed, dimmer automation & surge protection",
+      "Precision multi-tier crystal assembly & illumination testing"
+    ],
+    beforeImages: [
+      "/images/beforenafter/Chandelier/b1.webp",
+      "/images/beforenafter/Chandelier/b2.webp"
+    ],
+    afterImages: [
+      "/images/beforenafter/Chandelier/ai.webp"
+    ],
+    gallery: [
+      "/images/beforenafter/Chandelier/ai.webp",
+      "/images/beforenafter/Chandelier/b1.webp",
+      "/images/beforenafter/Chandelier/b2.webp"
+    ]
+  },
+  {
+    id: "al-ain-villa-bathroom-renovation",
+    title: "Al Ain Villa Bathrooms Renovation Project (Master Vanity & Tiling)",
+    category: "fitout",
+    categoryName: "Bathroom & Wet Areas Fit-Out",
+    location: "Al Ain, Abu Dhabi, UAE",
+    client: "Private Villa Estate Client",
+    year: "2025",
+    duration: "3 Weeks",
+    area: "Luxury Villa Master & Main Bathrooms",
+    image: "/images/beforenafter/bathroom1/after_1.jpg",
+    featured: true,
+    size: "normal",
+    shortDesc: "Turnkey luxury bathroom renovation delivered in 2025 for a private villa in Al Ain. Comprehensive remodel featuring full demolition, certified multi-layer waterproofing, large-format grey porcelain wall and floor slabs, custom floating marble-finish double vanity, frameless mirrors, and concealed drainage MEP.",
+    challenge: "Replacing dated sanitary piping, broken tiles, and uneven subflooring while ensuring 100% leak-proof waterproofing and modern minimalist aesthetics.",
+    solution: "Stripped space to core structure, applied heavy-duty polyurethane liquid waterproofing membrane with 48-hour flood testing, and installed laser-aligned large-format porcelain slabs with bespoke floating vanity.",
+    scope: [
+      "Complete demolition & subfloor leveling",
+      "Multi-layer certified elastomeric wet-area waterproofing",
+      "Large-format Italian-style porcelain wall & floor tiling",
+      "Custom floating double-basin vanity with marble countertop",
+      "Concealed MEP sanitary plumbing & modern linear floor drainage",
+      "Frameless vanity mirrors & moisture-resistant LED lighting"
+    ],
+    beforeImages: [
+      "/images/beforenafter/bathroom1/before_1.jpg",
+      "/images/beforenafter/bathroom1/before_2.jpg"
+    ],
+    afterImages: [
+      "/images/beforenafter/bathroom1/after_1.jpg",
+      "/images/beforenafter/bathroom1/after_2.jpg",
+      "/images/beforenafter/bathroom1/after_3.jpg"
+    ],
+    beforeVideo: "/images/beforenafter/bathroom1/before_video.mp4",
+    afterVideo: "/images/beforenafter/bathroom1/after_video.mp4",
+    videoTitle: "Completed Al Ain Villa Master Bathroom Walkthrough Video",
+    gallery: [
+      "/images/beforenafter/bathroom1/after_1.jpg",
+      "/images/beforenafter/bathroom1/after_2.jpg",
+      "/images/beforenafter/bathroom1/after_3.jpg",
+      "/images/beforenafter/bathroom1/before_1.jpg",
+      "/images/beforenafter/bathroom1/before_2.jpg"
+    ]
+  },
+  {
+    id: "al-ain-villa-guest-bathroom-renovation",
+    title: "Al Ain Villa Bathrooms Renovation Project (Ensuite & Walk-In Shower)",
+    category: "fitout",
+    categoryName: "Bathroom & Wet Areas Fit-Out",
+    location: "Al Ain, Abu Dhabi, UAE",
+    client: "Private Villa Estate Client",
+    year: "2025",
+    duration: "3 Weeks",
+    area: "Luxury Villa Ensuite Bathroom & Walk-In Shower",
+    image: "/images/beforenafter/bathroom2/after_1.jpg",
+    featured: true,
+    size: "normal",
+    shortDesc: "Second complete bathroom renovation delivered in 2025 as part of the Al Ain private villa estate upgrade. Stripped raw blockwork shell rebuilt into a pristine luxury bathroom featuring certified wet-area waterproofing, full-height light grey porcelain cladding, custom frameless glass shower enclosure, wall-hung concealed cistern WC, and integrated LED ceiling spots.",
+    challenge: "Reconstructing the entire bathroom space from rough blockwork and bare conduits while ensuring precise plumbing fall, flawless waterproofing, and clean minimalist finish in a compact luxury layout.",
+    solution: "Applied high-performance liquid elastomeric waterproofing membrane with flood test, engineered concealed wall-hung cistern framework, installed precision glass shower partitions, and leveled floor drainage.",
+    scope: [
+      "Subfloor screeding, wall plastering & laser leveling",
+      "Multi-coat certified liquid elastomeric wet-area waterproofing",
+      "Full-height light grey porcelain wall & floor tiling",
+      "Custom frameless tempered glass walk-in shower enclosure",
+      "Wall-hung WC with concealed in-wall cistern & dual-flush plate",
+      "Modern sanitary fixtures, chrome bidet spray & recessed ceiling spotlights"
+    ],
+    beforeImages: [
+      "/images/beforenafter/bathroom2/before_1.jpg",
+      "/images/beforenafter/bathroom2/before_2.jpg"
+    ],
+    afterImages: [
+      "/images/beforenafter/bathroom2/after_1.jpg",
+      "/images/beforenafter/bathroom2/after_2.jpg",
+      "/images/beforenafter/bathroom2/after_3.jpg"
+    ],
+    beforeVideo: "/images/beforenafter/bathroom2/before_video.mp4",
+    afterVideo: "/images/beforenafter/bathroom2/after_video.mp4",
+    videoTitle: "Completed Al Ain Villa Ensuite Walkthrough Video",
+    gallery: [
+      "/images/beforenafter/bathroom2/after_1.jpg",
+      "/images/beforenafter/bathroom2/after_2.jpg",
+      "/images/beforenafter/bathroom2/after_3.jpg",
+      "/images/beforenafter/bathroom2/before_1.jpg",
+      "/images/beforenafter/bathroom2/before_2.jpg"
+    ]
+  },
+  {
+    id: "al-ain-villa-powder-bathroom-renovation",
+    title: "Al Ain Villa Bathrooms Renovation Project (Guest Vanity & Modern Sanitary)",
+    category: "fitout",
+    categoryName: "Bathroom & Wet Areas Fit-Out",
+    location: "Al Ain, Abu Dhabi, UAE",
+    client: "Private Villa Estate Client",
+    year: "2025",
+    duration: "3 Weeks",
+    area: "Luxury Villa Guest Bathroom & Shower",
+    image: "/images/beforenafter/bathroom3/after_2.jpg",
+    featured: true,
+    size: "normal",
+    shortDesc: "Third complete bathroom renovation delivered in 2025 on the Al Ain private villa estate project. Complete strip-out of outdated blue ceramic fixtures, multi-coat certified waterproofing, large-format grey porcelain cladding, custom floating single vanity, wall-hung WC with concealed cistern, and walk-in glass shower.",
+    challenge: "Overhauling dated sanitary lines, broken floor tiles, and obsolete plumbing while ensuring 100% leak-proof waterproofing and high-spec minimalist finishing.",
+    solution: "Demolished old blue ceramic suite, applied double-coat liquid elastomeric waterproofing membrane with 48-hr flood test, and installed laser-aligned large-format grey porcelain tiles with concealed Geberit wall-hung cistern.",
+    scope: [
+      "Demolition of old blue ceramic suite & subfloor leveling",
+      "Multi-coat certified liquid elastomeric wet-area waterproofing",
+      "Full-height large-format grey porcelain wall & floor tiling",
+      "Custom floating single vanity with modern rectangular basin",
+      "Wall-hung WC with concealed in-wall cistern & dual flush",
+      "Modern shower fixtures, stainless bidet spray & recessed ceiling lighting"
+    ],
+    beforeImages: [
+      "/images/beforenafter/bathroom3/before_1.jpg",
+      "/images/beforenafter/bathroom3/before_2.jpg",
+      "/images/beforenafter/bathroom3/before_3.jpg"
+    ],
+    afterImages: [
+      "/images/beforenafter/bathroom3/after_1.jpg",
+      "/images/beforenafter/bathroom3/after_2.jpg",
+      "/images/beforenafter/bathroom3/after_3.jpg"
+    ],
+    beforeVideo: "/images/beforenafter/bathroom3/before_video.mp4",
+    afterVideo: "/images/beforenafter/bathroom3/after_video.mp4",
+    videoTitle: "Completed Al Ain Villa Bathroom 03 Walkthrough Video",
+    gallery: [
+      "/images/beforenafter/bathroom3/after_2.jpg",
+      "/images/beforenafter/bathroom3/after_1.jpg",
+      "/images/beforenafter/bathroom3/after_3.jpg",
+      "/images/beforenafter/bathroom3/before_2.jpg",
+      "/images/beforenafter/bathroom3/before_1.jpg",
+      "/images/beforenafter/bathroom3/before_3.jpg"
+    ]
+  },
+  {
     id: "commercial-tower-amc-reem",
     title: "Commercial Tower Total AMC & Facilities Care",
     category: "maintenance",
@@ -216,78 +427,91 @@ export const BEFORE_AFTER_SHOWCASE = [
     ]
   },
   {
-    id: "villa-facade-revamp",
-    title: "Villa Facade Restoration & Painting",
-    location: "Khalifa City, Abu Dhabi",
-    category: "Exterior Civil & Painting",
-    description: "Weather-worn, cracked exterior transformed into a modern luxury crisp white and gold accented villa facade with weatherproof Jotun Jotashield coating.",
-    beforeImage: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=90",
-    afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=90",
+    id: "kca-villa-external-transformation",
+    projectId: "kca-villa-external-work",
+    title: "KCA Villa External Work Project",
+    location: "Khalifa City A (KCA), Abu Dhabi",
+    category: "Exterior Civil & Landscaping",
+    description: "Complete exterior transformation of a luxury private villa in Khalifa City A (KCA), Abu Dhabi. Features structural boundary wall civil works, weatherproof Jotun facade painting, interlocking paver driveways, and architectural landscape lighting.",
+    beforeImage: "/images/beforenafter/External/b2.webp",
+    afterImage: "/images/beforenafter/External/a2.webp",
+    beforeVideo: "/images/beforenafter/External/b1.mp4",
+    afterVideo: "/images/beforenafter/External/a1.mp4",
     details: [
-      "Deep pressure washing & loose plaster removal",
-      "Elastomeric crack filling & damp seal primer",
-      "3 coats of Jotashield Extreme UV & dirt-resistant coating",
-      "Modern LED exterior wall uplighting installation"
+      "Boundary wall structural civil construction & plastering",
+      "UV-resistant weatherproof Jotashield exterior facade painting",
+      "Precision interlock paver and patio tile installation",
+      "Exterior landscape MEP, drainage & architectural uplighting"
     ]
   },
   {
-    id: "kitchen-transformation",
-    title: "Outdated Kitchen to Luxury Modern Space",
-    location: "Al Reem Island, Abu Dhabi",
-    category: "Interior Fit-Out",
-    description: "Cramped 15-year old kitchen transformed into a stunning open-concept culinary space with quartz waterfall island and seamless handleless cabinets.",
-    beforeImage: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=90",
-    afterImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=90",
+    id: "jubail-island-chandelier-transformation",
+    projectId: "jubail-island-chandelier-installation",
+    title: "Jubail Island AUH 5MH Chandelier Installation",
+    location: "Jubail Island, Abu Dhabi",
+    category: "MEP & Luxury Lighting Fit-Out",
+    description: "Specialized high-ceiling structural chandelier installation (5-meter height) in an ultra-luxury private residence on Jubail Island, Abu Dhabi. Encompassed ceiling load-bearing structural reinforcement, heavy-duty motorized winch hoisting, specialized electrical conduit routing, and bespoke crystal alignment.",
+    beforeImage: "/images/beforenafter/Chandelier/b1.webp",
+    afterImage: "/images/beforenafter/Chandelier/ai.webp",
     details: [
-      "Non-structural wall removal to open space",
-      "Custom anti-fingerprint matte charcoal cabinetry",
-      "Calacatta quartz waterfall edge island",
-      "Recessed architectural cove lighting"
+      "5-Meter high-reach structural ceiling anchoring & load testing",
+      "Motorized winch hoisting system for maintenance access",
+      "Dedicated electrical conduits, surge protection & architectural dimming",
+      "Delicate hand-assembled multi-tier crystal balancing & illumination calibration"
     ]
   },
   {
-    id: "luxury-bathroom-renovation",
-    title: "Master Suite Spa & Bathroom Renovation",
-    location: "Saadiyat Island, Abu Dhabi",
-    category: "Bathroom & Wet Areas",
-    description: "Outdated tiled master bathroom stripped to core concrete and rebuilt with Italian terrazzo, freestanding matte stone tub, and thermostatic brushed gold rainfall showers.",
-    beforeImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=90",
-    afterImage: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=90",
+    id: "al-ain-villa-bathroom-renovation",
+    projectId: "al-ain-villa-bathroom-renovation",
+    title: "Al Ain Villa Bathrooms Renovation (Bathroom 01 – Master Double Vanity)",
+    location: "Al Ain, Abu Dhabi, UAE",
+    category: "Luxury Bathroom Renovation",
+    description: "First luxury bathroom transformation delivered as part of the Al Ain Villa Bathrooms Renovation Project (Completed in 2025). Features complete strip-out, certified multi-layer waterproofing, precision large-format grey porcelain wall cladding, floating marble-finish double vanity with dual mirrors, and modern concealed MEP drainage.",
+    beforeImage: "/images/beforenafter/bathroom1/before_1.jpg",
+    afterImage: "/images/beforenafter/bathroom1/after_1.jpg",
+    beforeVideo: "/images/beforenafter/bathroom1/before_video.mp4",
+    afterVideo: "/images/beforenafter/bathroom1/after_video.mp4",
     details: [
-      "Triple-layer polyurethane wet-area waterproofing",
-      "Large-format bookmatched porcelain wall slabs",
-      "Concealed thermostatic brushed brass mixers",
-      "Custom fluted vanity with anti-fog LED backlit mirrors"
+      "Delivered in 2025 across luxury private villa bathrooms in Al Ain",
+      "Demolition, screeding & multi-layer elastomeric waterproofing with flood testing",
+      "Large-format porcelain wall & floor tiling with zero-lip laser alignment",
+      "Custom floating marble-vein double vanity, concealed MEP plumbing & modern LED coves"
     ]
   },
   {
-    id: "majlis-marble-flooring",
-    title: "Penthouse Majlis & Marble Fit-Out",
-    location: "Corniche Road, Abu Dhabi",
-    category: "Civil Fit-Out & Joinery",
-    description: "Standard commercial layout converted into a grand Emirati majlis with diamond-crystallized Statuario marble flooring and custom acoustic walnut fluting.",
-    beforeImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=90",
-    afterImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=90",
+    id: "al-ain-villa-guest-bathroom-renovation",
+    projectId: "al-ain-villa-guest-bathroom-renovation",
+    title: "Al Ain Villa Bathrooms Renovation (Bathroom 02 – Blockwork Ensuite & Shower)",
+    location: "Al Ain, Abu Dhabi, UAE",
+    category: "Luxury Bathroom Fit-Out",
+    description: "Second complete bathroom renovation delivered on the Al Ain Villa Bathrooms Renovation Project (Completed in 2025). Rebuilt from a stripped raw blockwork shell into a pristine luxury bathroom with certified wet-area waterproofing, full-height light grey porcelain cladding, custom frameless glass shower enclosure, wall-hung concealed cistern WC, and integrated LED downlights.",
+    beforeImage: "/images/beforenafter/bathroom2/before_1.jpg",
+    afterImage: "/images/beforenafter/bathroom2/after_1.jpg",
+    beforeVideo: "/images/beforenafter/bathroom2/before_video.mp4",
+    afterVideo: "/images/beforenafter/bathroom2/after_video.mp4",
     details: [
-      "Diamond planetary grinding & mirror crystallization",
-      "Acoustic fluted walnut wall panelling & hidden brass trims",
-      "Smart scene-based architectural mood lighting",
-      "Zero-lip precision tile and marble alignment"
+      "Delivered in 2025 as part of the Al Ain private villa estate renovation",
+      "Raw masonry & blockwork preparation, screeding & certified waterproofing",
+      "Full-height light grey porcelain wall cladding with zero-lip laser joints",
+      "Custom frameless glass walk-in shower, wall-hung WC & recessed LED ceiling downlights"
     ]
   },
   {
-    id: "ac-chiller-overhaul",
-    title: "Chiller Plant & HVAC Overhaul",
-    location: "Mussafah, Abu Dhabi",
-    category: "HVAC & Mechanical",
-    description: "Severely corroded condenser coils and clogged air ducts refurbished to restore 100% cooling capacity and cut energy bills by 28%.",
-    beforeImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=90",
-    afterImage: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=90",
+    id: "al-ain-villa-powder-bathroom-renovation",
+    projectId: "al-ain-villa-powder-bathroom-renovation",
+    title: "Al Ain Villa Bathrooms Renovation (Bathroom 03 – Guest Vanity & Modern Sanitary)",
+    location: "Al Ain, Abu Dhabi, UAE",
+    category: "Luxury Bathroom Renovation",
+    description: "Third complete bathroom renovation executed on the Al Ain Villa Bathrooms Renovation Project (Completed in 2025). Transformed an outdated blue ceramic suite into a sleek contemporary bathroom with certified multi-layer waterproofing, large-format grey porcelain tiles, floating single vanity with quartz-look basin, wall-hung WC with concealed Geberit cistern, and walk-in glass shower cubicle.",
+    beforeImage: "/images/beforenafter/bathroom3/before_2.jpg",
+    afterImage: "/images/beforenafter/bathroom3/after_2.jpg",
+    beforeVideo: "/images/beforenafter/bathroom3/before_video.mp4",
+    afterVideo: "/images/beforenafter/bathroom3/after_video.mp4",
     details: [
-      "Acid-free chemical foam coil descaling",
-      "Rotary brush robotic duct cleaning & sanitizing",
-      "Fan motor bearing replacement & vibration dampers",
-      "Digital airflow and pressure balancing certification"
+      "Delivered in 2025 as part of the Al Ain private villa estate renovation",
+      "Full strip-out of outdated blue ceramics, subfloor screeding & waterproofing",
+      "Precision large-format grey porcelain wall & floor tiling",
+      "Modern floating vanity sink, wall-hung WC with concealed cistern & walk-in shower"
     ]
   }
 ];

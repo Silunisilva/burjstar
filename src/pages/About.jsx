@@ -45,17 +45,17 @@ export default function About({ onOpenQuoteModal }) {
   ];
 
   const milestones = [
-    { year: "2012", title: "Inception in Abu Dhabi", desc: "Started as a specialized MEP & HVAC technical contracting unit in Mussafah Industrial Area." },
+    { year: "2010", title: "Inception in Abu Dhabi", desc: "Started as a specialized MEP & HVAC technical contracting unit in Mussafah Industrial Area." },
     { year: "2016", title: "General Civil Contracting", desc: "Obtained Abu Dhabi Municipality civil classification for luxury villa and commercial building works." },
     { year: "2019", title: "Total Facility Management & AMC", desc: "Launched 24/7 dedicated residential compound and commercial tower AMC divisions." },
-    { year: "2024", title: "850+ Landmark Deliveries", desc: "Managing premier luxury properties across Saadiyat, Yas Island, Reem, and Greater Abu Dhabi." }
+    { year: "2024", title: "450+ Landmark Deliveries", desc: "Managing premier luxury properties across Saadiyat, Yas Island, Reem, and Greater Abu Dhabi." }
   ];
 
   return (
     <div className="bg-white text-neutral-900 font-sans">
       <SEO 
         title="About Us | Architecture, Construction & Maintenance Abu Dhabi"
-        description="Learn about Burj Star Abu Dhabi. Over a decade of excellence in civil contracting, luxury villa construction, MEP maintenance, and facility management."
+        description="Learn about Burj Star Abu Dhabi. Over 15 years of excellence in civil contracting, luxury villa construction, MEP maintenance, and facility management."
       />
 
       {/* ========================================================================= */}
@@ -116,7 +116,7 @@ export default function About({ onOpenQuoteModal }) {
                 OUR LEGACY
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-neutral-900 leading-[1.2] mb-6">
-                A Decade of Technical Mastery in <br />
+                Over 15 Years of Technical Mastery in <br />
                 <span className="font-serif italic font-medium text-[#946317]">Abu Dhabi's Built Environment</span>
               </h2>
 

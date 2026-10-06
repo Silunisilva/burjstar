@@ -69,7 +69,7 @@ export default function Projects({ onSelectProject, onOpenQuoteModal }) {
 
             <div className="max-w-3xl text-left animate-fade-up">
               <div className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#D89828] mb-4 flex items-center gap-2">
-                <span>PORTFOLIO SHOWCASE • 850+ DELIVERIES</span>
+                <span>PORTFOLIO SHOWCASE • 450+ DELIVERIES</span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif text-white font-normal leading-[1.15] mb-6">

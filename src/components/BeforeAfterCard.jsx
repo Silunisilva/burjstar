@@ -90,49 +90,49 @@ export default function BeforeAfterCard({ item, onOpenQuoteModal, onSelectProjec
     <div className="bg-white border-2 border-neutral-200 hover:border-[#D89828] rounded-3xl overflow-hidden shadow-xl transition-all duration-300 flex flex-col group">
       
       {/* Top Card Header: Title & View Mode Toggle */}
-      <div className="p-5 sm:p-6 pb-4 flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 bg-neutral-50">
-        <div className="min-w-0">
-          <div className="flex items-center gap-2 mb-1">
+      <div className="p-4 sm:p-5 pb-3 sm:pb-4 flex flex-wrap items-center justify-between gap-2.5 border-b border-neutral-200 bg-neutral-50/90">
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 mb-1 flex-wrap">
             {item.location && (
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#946317] flex items-center gap-1">
-                <MapPin className="w-3 h-3 text-[#B57C1C]" />
-                {item.location}
+              <span className="text-[10px] font-bold uppercase tracking-wider text-[#946317] flex items-center gap-1 truncate max-w-full">
+                <MapPin className="w-3 h-3 text-[#B57C1C] shrink-0" />
+                <span className="truncate">{item.location}</span>
               </span>
             )}
             {hasVideo && (
-              <span className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-500/20 text-[#B57C1C] border border-[#D89828]/40 flex items-center gap-1">
-                <Film className="w-2.5 h-2.5" /> Video Comparison
+              <span className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-500/20 text-[#B57C1C] border border-[#D89828]/40 flex items-center gap-1 shrink-0">
+                <Film className="w-2.5 h-2.5" /> Video
               </span>
             )}
           </div>
           <h3 
             onClick={handleOpenProject}
-            className="text-lg sm:text-xl font-serif font-bold text-neutral-900 hover:text-[#B57C1C] cursor-pointer transition-colors flex items-center gap-2"
+            className="text-sm sm:text-base font-serif font-bold text-neutral-900 hover:text-[#B57C1C] cursor-pointer transition-colors flex items-center gap-1.5 leading-snug line-clamp-1"
             title="Click to view full project case study & walkthrough video"
           >
-            <span>{item.title}</span>
-            <Eye className="w-4 h-4 text-neutral-400 group-hover:text-[#B57C1C] shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <span className="truncate">{item.title}</span>
+            <Eye className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#B57C1C] shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
           </h3>
         </div>
 
         {/* View Mode Toggle */}
-        <div className="flex items-center gap-1 bg-neutral-200/70 p-1 rounded-xl border border-neutral-300 text-xs shrink-0">
+        <div className="flex items-center gap-1 bg-neutral-200/70 p-0.5 sm:p-1 rounded-xl border border-neutral-300 text-[11px] sm:text-xs shrink-0">
           <button
             onClick={() => setViewMode('slider')}
-            className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+            className={`px-2 sm:px-2.5 py-1 rounded-lg font-bold transition-all flex items-center gap-1 ${
               viewMode === 'slider' ? 'bg-[#D89828] text-black shadow-sm font-black' : 'text-neutral-600 hover:text-black'
             }`}
           >
-            <ArrowLeftRight className="w-3.5 h-3.5" />
+            <ArrowLeftRight className="w-3 h-3" />
             <span className="hidden sm:inline">Slider</span>
           </button>
           <button
             onClick={() => setViewMode('side-by-side')}
-            className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+            className={`px-2 sm:px-2.5 py-1 rounded-lg font-bold transition-all flex items-center gap-1 ${
               viewMode === 'side-by-side' ? 'bg-[#D89828] text-black shadow-sm font-black' : 'text-neutral-600 hover:text-black'
             }`}
           >
-            <Sliders className="w-3.5 h-3.5" />
+            <Sliders className="w-3 h-3" />
             <span className="hidden sm:inline">Side-by-Side</span>
           </button>
         </div>
@@ -142,7 +142,7 @@ export default function BeforeAfterCard({ item, onOpenQuoteModal, onSelectProjec
       <div className="p-3 sm:p-5 bg-neutral-100">
         {viewMode === 'slider' ? (
           <div
-            className="relative w-full h-[360px] sm:h-[440px] rounded-2xl overflow-hidden cursor-ew-resize select-none border-2 border-neutral-300 shadow-md group/slider"
+            className="relative w-full h-[340px] sm:h-[420px] lg:h-[390px] xl:h-[430px] rounded-2xl overflow-hidden cursor-ew-resize select-none border-2 border-neutral-300 shadow-md group/slider"
             onMouseMove={handleSliderMove}
             onTouchMove={handleTouchMove}
           >
@@ -174,7 +174,7 @@ export default function BeforeAfterCard({ item, onOpenQuoteModal, onSelectProjec
             </div>
 
             {/* Instruction Overlay */}
-            <div className="absolute bottom-3 inset-x-0 text-center pointer-events-none">
+            <div className="absolute bottom-3 inset-x-0 text-center pointer-events-none px-3">
               <span className="text-[11px] font-bold text-white bg-black/85 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/20 shadow-md">
                 ↔ Drag slider left / right to compare {hasVideo ? 'video frames' : 'details'}
               </span>
@@ -182,7 +182,7 @@ export default function BeforeAfterCard({ item, onOpenQuoteModal, onSelectProjec
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            <div className="relative h-[240px] sm:h-[320px] rounded-2xl overflow-hidden border-2 border-neutral-300 shadow-md">
+            <div className="relative h-[220px] sm:h-[300px] rounded-xl overflow-hidden border-2 border-neutral-300 shadow-md">
               {item.beforeVideo ? (
                 <video src={item.beforeVideo} autoPlay loop muted playsInline className="w-full h-full object-cover" />
               ) : (
@@ -192,7 +192,7 @@ export default function BeforeAfterCard({ item, onOpenQuoteModal, onSelectProjec
                 BEFORE
               </span>
             </div>
-            <div className="relative h-[240px] sm:h-[320px] rounded-2xl overflow-hidden border-2 border-emerald-500 shadow-md">
+            <div className="relative h-[220px] sm:h-[300px] rounded-xl overflow-hidden border-2 border-emerald-500 shadow-md">
               {item.afterVideo ? (
                 <video src={item.afterVideo} autoPlay loop muted playsInline className="w-full h-full object-cover filter brightness-105" />
               ) : (
@@ -207,33 +207,33 @@ export default function BeforeAfterCard({ item, onOpenQuoteModal, onSelectProjec
       </div>
 
       {/* View Full Project Case Study Bar */}
-      <div className="px-5 py-2.5 bg-neutral-50 border-t border-neutral-200 flex items-center justify-between">
+      <div className="px-4 sm:px-5 py-2.5 bg-neutral-50 border-t border-neutral-200 flex items-center justify-between">
         <button
           onClick={handleOpenProject}
-          className="text-xs font-bold text-neutral-800 hover:text-[#B57C1C] flex items-center gap-2 group/btn transition-colors"
+          className="text-[11px] sm:text-xs font-bold text-neutral-800 hover:text-[#B57C1C] flex items-center gap-1.5 group/btn transition-colors"
         >
           <Film className="w-3.5 h-3.5 text-[#B57C1C]" />
-          <span>Explore Full Project & 4K Video Walkthrough</span>
-          <ArrowUpRight className="w-3.5 h-3.5 text-[#B57C1C] transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+          <span className="truncate">Explore Case Study & Walkthrough</span>
+          <ArrowUpRight className="w-3.5 h-3.5 text-[#B57C1C] shrink-0 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
         </button>
       </div>
 
       {/* Clean Bottom Actions */}
-      <div className="p-4 sm:p-5 bg-white border-t border-neutral-200 flex items-center gap-3">
+      <div className="p-3 sm:p-4 bg-white border-t border-neutral-200 flex items-center gap-2 sm:gap-3">
         <button
           onClick={handleWhatsApp}
-          className="flex-1 py-2.5 px-4 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold uppercase tracking-wider rounded-xl shadow-sm flex items-center justify-center gap-2 transition-colors"
+          className="flex-1 py-2 sm:py-2.5 px-3 bg-[#25D366] hover:bg-[#20ba59] text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider rounded-xl shadow-sm flex items-center justify-center gap-1.5 transition-colors"
         >
-          <MessageSquare className="w-4 h-4" />
-          <span>WhatsApp Enquiry</span>
+          <MessageSquare className="w-3.5 h-3.5" />
+          <span>WhatsApp</span>
         </button>
         
         <button
           onClick={() => onOpenQuoteModal && onOpenQuoteModal(`Renovation: ${item.title}`)}
-          className="flex-1 py-2.5 px-4 bg-[#D89828] hover:bg-[#E5AF4D] text-black text-xs font-bold uppercase tracking-wider rounded-xl shadow-gold-sm hover:shadow-gold-glow flex items-center justify-center gap-1.5 transition-all"
+          className="flex-1 py-2 sm:py-2.5 px-3 bg-[#D89828] hover:bg-[#E5AF4D] text-black text-[11px] sm:text-xs font-bold uppercase tracking-wider rounded-xl shadow-gold-sm hover:shadow-gold-glow flex items-center justify-center gap-1 transition-all"
         >
           <span>Get Quote</span>
-          <ArrowUpRight className="w-4 h-4" />
+          <ArrowUpRight className="w-3.5 h-3.5" />
         </button>
       </div>
 

@@ -3,7 +3,7 @@ export const COMPANY_INFO = {
   name: "Burj Star General Maintenance & Property Management LLC",
   shortName: "Burj Star",
   tagline: "Premier Annual Maintenance (AMC), Contracting & Property Management in Abu Dhabi",
-  established: "22/12/2022",
+  established: "2010",
   crNumber: "CN-2894510",
   municipalityLicense: "ADM-ENG-74921",
   
@@ -18,16 +18,16 @@ export const COMPANY_INFO = {
   whatsapp: "052 450 5388",
   whatsappRaw: "971524505388", // formatted for wa.me
   email: "info@burjstar.co",
-  secondaryEmail: "burjstar111@gmail.com",
+  secondaryEmail: "info@burjstar.co",
   supportEmail: "info@burjstar.co",
-  careersEmail: "burjstar111@gmail.com",
+  careersEmail: "info@burjstar.co",
   
   // Address & Geo
   address: {
-    street: "P162, Emirates Dermatology Building, 6th Floor Office No. 615, Al Nahyan",
+    street: "P162, Business Center Tower, Emirates Dermatology, 6th Floor Office No. 615, Al Nahyan",
     city: "Abu Dhabi",
     country: "United Arab Emirates",
-    full: "P162, Emirates Dermatology Building, 6th Floor Office No. 615, Al Nahyan, Abu Dhabi, UAE",
+    full: "P162, Business Center Tower, Emirates Dermatology, 6th Floor Office Number 615, Abu Dhabi, UAE",
     googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.2981084227367!2d54.3828949!3d24.4756855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e664878a4866b%3A0x6d04d8058448ea97!2sAl%20Nahyan%20-%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae",
   },
   
@@ -61,9 +61,9 @@ export const COMPANY_INFO = {
   
   // Quick trust stats
   stats: [
-    { label: "Completed Projects", value: "850+" },
+    { label: "Completed Projects", value: "450+" },
     { label: "Active AMC Contracts", value: "320+" },
-    { label: "Established In", value: "2022" },
+    { label: "Established In", value: "2010" },
     { label: "Certified Technicians", value: "95+" }
   ]
 };
