@@ -22,7 +22,7 @@ export default function Contact({ onOpenQuoteModal }) {
     {
       icon: Phone,
       title: "Call Direct Desk",
-      primary: COMPANY_INFO.phone,
+      primary: COMPANY_INFO.phoneDisplay || COMPANY_INFO.phone,
       sub: "Office Line (Sat - Thu, 8:00 AM - 6:30 PM)",
       action: `tel:${COMPANY_INFO.phoneRaw}`,
       btnText: "Call Now",

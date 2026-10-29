@@ -8,9 +8,9 @@ export const COMPANY_INFO = {
   municipalityLicense: "ADM-ENG-74921",
   
   // Contact details
-  phone: "0524505388",
-  phoneDisplay: "052 450 5388",
-  phoneRaw: "+971524505388",
+  phone: "024479895",
+  phoneDisplay: "02 447 9895",
+  phoneRaw: "+97124479895",
   mobile: "+971 52 450 5388",
   mobileRaw: "+971524505388",
   emergencyPhone: "052 450 5388",
@@ -65,7 +65,39 @@ export const COMPANY_INFO = {
     { label: "Active AMC Contracts", value: "320+" },
     { label: "Established In", value: "2010" },
     { label: "Certified Technicians", value: "95+" }
-  ]
+  ],
+
+  // Executive Leadership
+  leadership: {
+    ceo: {
+      name: "Nauman Mehmood",
+      title: "Chief Executive Officer (CEO)",
+      role: "Chief Executive Officer",
+      company: "Burj Star General Maintenance and Property Management LLC",
+      experience: "15+ Years",
+      image: "/images/team/nauman-mehmood.jpg",
+      quote: "Building lasting client relationships, strengthening business partnerships, and ensuring consistent service quality across Abu Dhabi and the UAE.",
+      bio: [
+        "Nauman Mehmood is the Chief Executive Officer of Burj Star General Maintenance and Property Management LLC, bringing over 15 years of professional experience in the facility management industry.",
+        "With a strong focus on business development, operational management, and customer satisfaction, he leads the company in delivering reliable and professional maintenance and property management solutions.",
+        "Under his leadership, Burj Star is committed to maintaining high standards of quality, safety, and service excellence across its range of services, including MEP services, AC maintenance, general maintenance, façade cleaning, and property management.",
+        "His vision is to build lasting client relationships, strengthen business partnerships, and ensure consistent service quality while supporting the company's continued growth and development."
+      ],
+      highlights: [
+        "15+ Years in Facility Management",
+        "Business Development & Operational Leadership",
+        "Uncompromising Standards in Quality & Safety",
+        "Client-Centric Excellence & Strategic Partnerships"
+      ],
+      services: [
+        "MEP Services",
+        "AC Maintenance",
+        "General Maintenance",
+        "Façade Cleaning",
+        "Property Management"
+      ]
+    }
+  }
 };
 
 // Helper to construct formatted WhatsApp URL

@@ -308,8 +308,9 @@ export default function Home({ onOpenQuoteModal, onSelectService, onSelectProjec
   return (
     <div className="bg-white text-neutral-900 font-sans">
       <SEO 
-        title="Burj Star | Architecture, Construction & Maintenance Abu Dhabi"
-        description="From concept to completion, Burj Star crafts extraordinary spaces that elevate living and stand the test of time across Abu Dhabi."
+        title="Burj Star | Construction, AMC & Property Maintenance Abu Dhabi"
+        description="Burj Star is Abu Dhabi's premier contractor for luxury villa construction, MEP maintenance, HVAC servicing, interior fit-outs, and 24/7 AMC contracts."
+        keywords="construction company Abu Dhabi, property maintenance Abu Dhabi, villa renovation Abu Dhabi, AMC contract Abu Dhabi, HVAC maintenance Abu Dhabi, MEP contracting Abu Dhabi, civil contracting UAE, Burj Star general maintenance"
       />
 
       {/* ========================================================================= */}

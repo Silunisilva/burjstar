@@ -99,7 +99,8 @@
 
 - **Company:** Burj Star General Maintenance & Property Management LLC
 - **Location:** P162, Business Center Tower, Emirates Dermatology, 6th Floor Office Number 615, Abu Dhabi, UAE
-- **Hotline / 24/7 Emergency:** `+971 52 450 5388`
+- **Office Phone:** `+971 2 447 9895` (`02 447 9895`)
+- **Mobile / WhatsApp:** `+971 52 450 5388`
 - **Email:** `info@burjstar.co`
 - **Licenses:** ADM Grade-A Licensed • ADDC Certified • Civil Defense Compliant
 

@@ -14,7 +14,9 @@ import {
   ArrowUpRight,
   Sparkles,
   Compass,
-  Layers
+  Layers,
+  Briefcase,
+  Quote
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import SectionHeading from '../components/SectionHeading';
@@ -227,9 +229,175 @@ export default function About({ onOpenQuoteModal }) {
       </section>
 
       {/* ========================================================================= */}
-      {/* 4. GROWTH & MILESTONES (Warm-White Architectural Layout)                   */}
+      {/* 4. EXECUTIVE LEADERSHIP (CEO PROFILE)                                     */}
       {/* ========================================================================= */}
-      <section className="py-24 sm:py-32 bg-[#FBF9F5] text-neutral-900 relative border-t border-neutral-200">
+      <section className="py-24 sm:py-32 bg-[#FBF9F5] text-neutral-900 relative border-t border-neutral-200 overflow-hidden">
+        {/* Subtle background luxury accents */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D89828]/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#B57C1C]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+          
+          <SectionHeading
+            badge="Executive Leadership"
+            title="Leadership Guided by"
+            titleHighlight="Excellence & Vision"
+            theme="light"
+            description="Spearheading technical mastery, uncompromising quality, and enduring partnerships in facility management across the UAE."
+          />
+
+          <div className="bg-white rounded-3xl border border-neutral-200/90 shadow-xl overflow-hidden relative">
+            {/* Top gold accent line */}
+            <div className="h-1.5 w-full bg-gradient-to-r from-[#B57C1C] via-[#D89828] to-[#946317]"></div>
+
+            <div className="p-6 sm:p-10 lg:p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+                
+                {/* Left: CEO Portrait and Accents (5 cols) */}
+                <div className="lg:col-span-5 flex flex-col items-center">
+                  <div className="w-full max-w-[360px] relative group">
+                    
+                    {/* Architectural framing effect */}
+                    <div className="absolute -inset-2 bg-gradient-to-tr from-[#D89828]/25 via-transparent to-[#B57C1C]/20 rounded-3xl blur-md opacity-70 group-hover:opacity-100 transition duration-700"></div>
+
+                    {/* Image Container */}
+                    <div className="relative rounded-2xl overflow-hidden border border-neutral-200/80 shadow-2xl bg-neutral-100 aspect-square">
+                      <img
+                        src="/images/team/nauman-mehmood.jpg"
+                        alt="Nauman Mehmood - Chief Executive Officer (CEO) of Burj Star"
+                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      />
+                      
+                      {/* Subtle image lighting gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+
+                      {/* Floating Badge */}
+                      <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-white/95 backdrop-blur-md border border-neutral-200/90 text-neutral-900 flex items-center gap-3 shadow-lg">
+                        <div className="w-10 h-10 rounded-lg bg-[#D89828] flex items-center justify-center text-black font-bold shrink-0 shadow-sm">
+                          <Award className="w-5 h-5" />
+                        </div>
+                        <div className="text-left">
+                          <span className="text-xs font-serif font-bold text-neutral-900 block leading-tight">15+ Years Experience</span>
+                          <span className="text-[11px] text-neutral-600 block leading-tight font-sans">Facility Management Industry</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Quick Highlights Under Image */}
+                    <div className="mt-4 grid grid-cols-2 gap-2.5">
+                      <div className="bg-[#F8FAFC] border border-neutral-200/90 rounded-xl p-3 text-center">
+                        <span className="text-xs font-serif font-bold text-neutral-900 block">15+ Years</span>
+                        <span className="text-[10px] text-neutral-500 uppercase tracking-wider block font-semibold">Leadership</span>
+                      </div>
+                      <div className="bg-[#F8FAFC] border border-neutral-200/90 rounded-xl p-3 text-center">
+                        <span className="text-xs font-serif font-bold text-[#946317] block">Abu Dhabi & UAE</span>
+                        <span className="text-[10px] text-neutral-500 uppercase tracking-wider block font-semibold">Operations</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Right: Detailed Bio & Leadership Message (7 cols) */}
+                <div className="lg:col-span-7 flex flex-col items-start text-left">
+                  
+                  {/* Role Badge */}
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] bg-[#D89828]/15 text-[#946317] border border-[#D89828]/40 mb-3 shadow-xs">
+                    <Sparkles className="w-3.5 h-3.5 text-[#D89828]" />
+                    <span>Chief Executive Officer (CEO)</span>
+                  </div>
+
+                  {/* Name */}
+                  <h3 className="text-3xl sm:text-4xl lg:text-4xl font-serif font-bold text-neutral-900 tracking-tight mb-2">
+                    Nauman Mehmood
+                  </h3>
+
+                  {/* Company Name */}
+                  <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-[#946317] mb-6 flex items-center gap-2">
+                    <Building className="w-4 h-4 text-[#B57C1C]" />
+                    <span>Burj Star General Maintenance and Property Management LLC</span>
+                  </p>
+
+                  {/* Pull Quote Box */}
+                  <div className="w-full bg-[#FBF9F5] border-l-4 border-[#D89828] p-5 rounded-r-2xl mb-6 relative shadow-xs">
+                    <Quote className="w-8 h-8 text-[#D89828]/25 absolute top-3 right-4 rotate-180 pointer-events-none" />
+                    <p className="text-xs sm:text-sm italic font-serif text-neutral-800 leading-relaxed relative z-10 pr-6">
+                      "His vision is to build lasting client relationships, strengthen business partnerships, and ensure consistent service quality while supporting the company's continued growth and development."
+                    </p>
+                  </div>
+
+                  {/* Biography Paragraphs */}
+                  <div className="space-y-4 text-xs sm:text-sm text-neutral-700 leading-relaxed font-normal">
+                    <p>
+                      Nauman Mehmood is the Chief Executive Officer of Burj Star General Maintenance and Property Management LLC, bringing over 15 years of professional experience in the facility management industry.
+                    </p>
+                    <p>
+                      With a strong focus on business development, operational management, and customer satisfaction, he leads the company in delivering reliable and professional maintenance and property management solutions.
+                    </p>
+                    <p>
+                      Under his leadership, Burj Star is committed to maintaining high standards of quality, safety, and service excellence across its range of services, including MEP services, AC maintenance, general maintenance, façade cleaning, and property management.
+                    </p>
+                    <p>
+                      His vision is to build lasting client relationships, strengthen business partnerships, and ensure consistent service quality while supporting the company's continued growth and development.
+                    </p>
+                  </div>
+
+                  {/* Services Scope Under Leadership */}
+                  <div className="mt-6 pt-6 border-t border-neutral-200 w-full">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-3">
+                      Executive Oversight & Service Portfolio
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        "MEP Services",
+                        "AC Maintenance",
+                        "General Maintenance",
+                        "Façade Cleaning",
+                        "Property Management"
+                      ].map((service, sIdx) => (
+                        <span
+                          key={sIdx}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#F8FAFC] border border-neutral-200 text-xs font-medium text-neutral-800 hover:border-[#D89828]/60 transition-colors shadow-xs"
+                        >
+                          <CheckCircle2 className="w-3.5 h-3.5 text-[#B57C1C]" />
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA Row */}
+                  <div className="mt-8 flex flex-wrap items-center gap-3.5 w-full">
+                    <button
+                      onClick={onOpenQuoteModal}
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#D89828] hover:bg-[#E5AF4D] text-black text-xs font-bold uppercase tracking-wider rounded-md transition-all shadow-gold-sm hover:shadow-gold-glow group"
+                    >
+                      <span>Request a Consultation</span>
+                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </button>
+                    <a
+                      href={createWhatsAppUrl("Hello Nauman Mehmood & Burj Star Team, I would like to discuss facility management and maintenance solutions.")}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold uppercase tracking-wider rounded-md transition-all shadow-xs"
+                    >
+                      <span>Chat on WhatsApp</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* 5. GROWTH & MILESTONES (Clean Architectural Grid)                         */}
+      {/* ========================================================================= */}
+      <section className="py-24 sm:py-32 bg-white text-neutral-900 relative border-t border-neutral-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           
           <SectionHeading
@@ -241,7 +409,7 @@ export default function About({ onOpenQuoteModal }) {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {milestones.map((m, idx) => (
-              <div key={idx} className="bg-white p-7 rounded-2xl border border-neutral-200 shadow-sm relative group hover:border-[#D89828] transition-colors">
+              <div key={idx} className="bg-[#F8FAFC] p-7 rounded-2xl border border-neutral-200 shadow-sm relative group hover:border-[#D89828] transition-colors">
                 <span className="text-3xl font-serif font-bold text-[#946317] block mb-2">{m.year}</span>
                 <h4 className="text-base font-serif font-bold text-neutral-900 mb-2">{m.title}</h4>
                 <p className="text-xs text-neutral-600 leading-relaxed">{m.desc}</p>
@@ -253,9 +421,9 @@ export default function About({ onOpenQuoteModal }) {
       </section>
 
       {/* ========================================================================= */}
-      {/* 5. SERVICE COVERAGE MAP                                                   */}
+      {/* 6. SERVICE COVERAGE MAP (Warm-White Architectural Layout)                  */}
       {/* ========================================================================= */}
-      <section className="py-24 sm:py-32 bg-white text-neutral-900 border-t border-neutral-200">
+      <section className="py-24 sm:py-32 bg-[#FBF9F5] text-neutral-900 border-t border-neutral-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -271,7 +439,7 @@ export default function About({ onOpenQuoteModal }) {
                 Our fleet of mobile technical response units are deployed throughout key hubs in the emirate, ensuring rapid on-site arrival for both planned visits and emergency call-outs.
               </p>
 
-              <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-neutral-200 flex items-center gap-4 shadow-sm">
+              <div className="p-5 rounded-2xl bg-white border border-neutral-200 flex items-center gap-4 shadow-sm">
                 <div className="w-12 h-12 rounded-xl bg-[#D89828] text-black flex items-center justify-center shrink-0 font-bold shadow-xs">
                   <Clock className="w-6 h-6" />
                 </div>
@@ -285,7 +453,7 @@ export default function About({ onOpenQuoteModal }) {
             <div className="lg:col-span-7">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {COMPANY_INFO.serviceAreas.map((area, idx) => (
-                  <div key={idx} className="flex items-center gap-3 p-4 rounded-xl bg-[#F8FAFC] border border-neutral-200 hover:border-[#D89828]/50 text-xs sm:text-sm text-neutral-800 transition-colors shadow-xs">
+                  <div key={idx} className="flex items-center gap-3 p-4 rounded-xl bg-white border border-neutral-200 hover:border-[#D89828]/50 text-xs sm:text-sm text-neutral-800 transition-colors shadow-xs">
                     <MapPin className="w-4 h-4 text-[#B57C1C] shrink-0" />
                     <span className="font-medium font-sans">{area}</span>
                   </div>
@@ -298,7 +466,7 @@ export default function About({ onOpenQuoteModal }) {
       </section>
 
       {/* ========================================================================= */}
-      {/* 6. CALL TO ACTION                                                         */}
+      {/* 7. CALL TO ACTION                                                         */}
       {/* ========================================================================= */}
       <section className="py-20 text-center max-w-4xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-serif text-neutral-900 mb-4">
