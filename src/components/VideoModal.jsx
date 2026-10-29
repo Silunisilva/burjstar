@@ -38,7 +38,7 @@ export default function VideoModal({ video, onClose, onEnquire }) {
             controls
             autoPlay
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain bg-black"
           >
             Your browser does not support video playback.
           </video>

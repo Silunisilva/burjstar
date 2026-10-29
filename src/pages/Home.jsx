@@ -32,7 +32,9 @@ import {
   Flame,
   Fan,
   Layers,
-  Cpu
+  Cpu,
+  Film,
+  MapPin
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import GalleryModal from '../components/GalleryModal';
@@ -43,6 +45,7 @@ import HeroStats from '../components/HeroStats';
 import { COMPANY_INFO, createWhatsAppUrl } from '../data/companyInfo';
 import { GALLERY_ITEMS, GALLERY_CATEGORIES } from '../data/gallery';
 import { VIDEOS, VIDEO_CATEGORIES } from '../data/videos';
+import { PROJECTS } from '../data/projects';
 import { REVIEWS, GOOGLE_REVIEWS_SUMMARY } from '../data/reviews';
 
 export default function Home({ onOpenQuoteModal, onSelectService, onSelectProject }) {
@@ -260,7 +263,7 @@ export default function Home({ onOpenQuoteModal, onSelectService, onSelectProjec
 
   const filteredVideos = videoFilter === 'all'
     ? VIDEOS
-    : VIDEOS.filter(v => v.category === videoFilter);
+    : VIDEOS.filter(v => v.category === videoFilter || v.subCategory === videoFilter);
 
   const processSteps = [
     {
@@ -465,7 +468,7 @@ export default function Home({ onOpenQuoteModal, onSelectService, onSelectProjec
                 Spaces That Define <span className="text-[#946317] italic">Excellence</span>
               </h2>
               <p className="text-xs sm:text-sm text-neutral-700 max-w-xl mt-2 font-medium">
-                Signature luxury villas, commercial towers, and multi-year facility maintenance contracts in Abu Dhabi.
+                Real completed projects across Abu Dhabi & Al Ain featuring turnkey interior fit-outs, exterior villa civil restorations, high-ceiling chandelier rigging, and luxury bathroom transformations.
               </p>
             </div>
 
@@ -478,122 +481,68 @@ export default function Home({ onOpenQuoteModal, onSelectService, onSelectProjec
             </Link>
           </div>
 
-          {/* Large Highlighted Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            {/* Card 1: Horizon Residence */}
-            <div 
-              onClick={() => onOpenQuoteModal('Horizon Residence (Saadiyat Villa)')}
-              className="group relative h-[440px] rounded-3xl overflow-hidden cursor-pointer shadow-xl border-2 border-neutral-300 hover:border-[#D89828] transition-all duration-500 hover:-translate-y-1.5"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=95"
-                alt="Horizon Residence"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108 group-hover:brightness-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
-              
-              <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 rounded-full bg-black/85 backdrop-blur-md text-[#D89828] text-[11px] font-bold uppercase tracking-wider border border-[#D89828]">
-                  Luxury Villa
-                </span>
-              </div>
-
-              <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white">
-                <div>
-                  <h4 className="text-xl font-serif font-bold text-white leading-tight group-hover:text-[#D89828] transition-colors">
-                    Horizon Residence
-                  </h4>
-                  <p className="text-xs text-gray-200 font-medium mt-1">Saadiyat Island, Abu Dhabi</p>
-                </div>
-                <div className="w-10 h-10 rounded-full bg-[#D89828] text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform shrink-0">
-                  <ArrowUpRight className="w-5 h-5 font-bold" />
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2: Stacked 2 Landscape Cards */}
-            <div className="flex flex-col gap-6">
-              <div 
-                onClick={() => onOpenQuoteModal('Aurora Office Tower')}
-                className="group relative h-[207px] rounded-3xl overflow-hidden cursor-pointer shadow-xl border-2 border-neutral-300 hover:border-[#D89828] transition-all duration-500 hover:-translate-y-1"
+          {/* Real Landmark Before & After Projects Grid (6 Projects) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {PROJECTS.slice(0, 6).map((project) => (
+              <div
+                key={project.id}
+                onClick={() => onSelectProject && onSelectProject(project)}
+                className="group relative rounded-3xl overflow-hidden cursor-pointer shadow-xl border-2 border-neutral-300 hover:border-[#D89828] transition-all duration-500 hover:-translate-y-2 bg-neutral-900 flex flex-col justify-between h-[440px] sm:h-[460px]"
               >
+                {/* Background Image */}
                 <img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=95"
-                  alt="Aurora Office Tower"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108 group-hover:brightness-105"
+                  src={project.image}
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-108 group-hover:brightness-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
-                
-                <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between text-white">
-                  <div>
-                    <h4 className="text-base font-serif font-bold text-white group-hover:text-[#D89828] transition-colors">
-                      Aurora Office Tower
-                    </h4>
-                    <p className="text-[11px] text-gray-200 font-medium">Al Reem Island, Abu Dhabi</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/20"></div>
+
+                {/* Top Badges */}
+                <div className="relative z-10 p-5 flex items-center justify-between">
+                  <span className="px-3.5 py-1 rounded-full bg-black/85 backdrop-blur-md text-[#D89828] text-[10px] font-bold uppercase tracking-wider border border-[#D89828]/50 shadow-md">
+                    {project.categoryName}
+                  </span>
+                  
+                  <div className="flex items-center gap-2">
+                    {project.afterVideo && (
+                      <span className="px-2.5 py-1 rounded-md bg-[#D89828] text-black text-[10px] font-black uppercase tracking-wider shadow flex items-center gap-1">
+                        <Film className="w-3 h-3" />
+                        <span>Reel</span>
+                      </span>
+                    )}
+                    <span className="px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md text-white text-[11px] font-semibold border border-white/10">
+                      {project.duration || project.year}
+                    </span>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-[#D89828] text-black flex items-center justify-center shadow-md group-hover:scale-110 transition-transform shrink-0">
-                    <ArrowUpRight className="w-4 h-4 font-bold" />
+                </div>
+
+                {/* Bottom Content */}
+                <div className="relative z-10 p-6 pt-0 text-white">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-[#D89828] mb-1.5">
+                    <MapPin className="w-3.5 h-3.5 shrink-0" />
+                    <span>{project.location}</span>
+                  </div>
+
+                  <h3 className="text-lg sm:text-xl font-serif font-bold text-white group-hover:text-[#D89828] transition-colors leading-tight line-clamp-2 mb-2">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-xs sm:text-sm text-gray-200 line-clamp-2 font-normal leading-relaxed mb-4">
+                    {project.shortDesc}
+                  </p>
+
+                  <div className="flex items-center justify-between pt-3 border-t border-white/15 text-xs font-bold uppercase tracking-wider text-[#D89828]">
+                    <span className="flex items-center gap-1.5 group-hover:translate-x-1 transition-transform">
+                      <span>Explore Case Study</span>
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
+                    <span className="text-[11px] font-normal text-gray-300">
+                      Before & After Included
+                    </span>
                   </div>
                 </div>
               </div>
-
-              <div 
-                onClick={() => onOpenQuoteModal('Edgewood Villa')}
-                className="group relative h-[207px] rounded-3xl overflow-hidden cursor-pointer shadow-xl border-2 border-neutral-300 hover:border-[#D89828] transition-all duration-500 hover:-translate-y-1"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=95"
-                  alt="Edgewood Villa"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108 group-hover:brightness-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
-                
-                <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between text-white">
-                  <div>
-                    <h4 className="text-base font-serif font-bold text-white group-hover:text-[#D89828] transition-colors">
-                      Edgewood Villa
-                    </h4>
-                    <p className="text-[11px] text-gray-200 font-medium">Yas Island, Abu Dhabi</p>
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-[#D89828] text-black flex items-center justify-center shadow-md group-hover:scale-110 transition-transform shrink-0">
-                    <ArrowUpRight className="w-4 h-4 font-bold" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3: Maple Street Residences */}
-            <div 
-              onClick={() => onOpenQuoteModal('Maple Street Residences')}
-              className="group relative h-[440px] rounded-3xl overflow-hidden cursor-pointer shadow-xl border-2 border-neutral-300 hover:border-[#D89828] transition-all duration-500 hover:-translate-y-1.5"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=95"
-                alt="Maple Street Residences"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108 group-hover:brightness-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
-              
-              <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 rounded-full bg-black/85 backdrop-blur-md text-[#D89828] text-[11px] font-bold uppercase tracking-wider border border-[#D89828]">
-                  Commercial AMC
-                </span>
-              </div>
-
-              <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white">
-                <div>
-                  <h4 className="text-xl font-serif font-bold text-white leading-tight group-hover:text-[#D89828] transition-colors">
-                    Maple Residences
-                  </h4>
-                  <p className="text-xs text-gray-200 font-medium mt-1">Al Maryah Island, Abu Dhabi</p>
-                </div>
-                <div className="w-10 h-10 rounded-full bg-[#D89828] text-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform shrink-0">
-                  <ArrowUpRight className="w-5 h-5 font-bold" />
-                </div>
-              </div>
-            </div>
-
+            ))}
           </div>
 
         </div>

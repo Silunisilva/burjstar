@@ -365,26 +365,6 @@ export default function About({ onOpenQuoteModal }) {
                       ))}
                     </div>
                   </div>
-
-                  {/* CTA Row */}
-                  <div className="mt-8 flex flex-wrap items-center gap-3.5 w-full">
-                    <button
-                      onClick={onOpenQuoteModal}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#D89828] hover:bg-[#E5AF4D] text-black text-xs font-bold uppercase tracking-wider rounded-md transition-all shadow-gold-sm hover:shadow-gold-glow group"
-                    >
-                      <span>Request a Consultation</span>
-                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </button>
-                    <a
-                      href={createWhatsAppUrl("Hello Nauman Mehmood & Burj Star Team, I would like to discuss facility management and maintenance solutions.")}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold uppercase tracking-wider rounded-md transition-all shadow-xs"
-                    >
-                      <span>Chat on WhatsApp</span>
-                    </a>
-                  </div>
-
                 </div>
 
               </div>

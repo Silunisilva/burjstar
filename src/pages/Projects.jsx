@@ -33,7 +33,7 @@ export default function Projects({ onSelectProject, onOpenQuoteModal }) {
 
   const filteredVideos = useMemo(() => {
     if (videoFilter === 'all') return VIDEOS;
-    return VIDEOS.filter(v => v.category === videoFilter);
+    return VIDEOS.filter(v => v.category === videoFilter || v.subCategory === videoFilter);
   }, [videoFilter]);
 
   return (

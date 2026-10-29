@@ -126,6 +126,8 @@ export const PROJECTS = [
     afterImages: [
       "/images/beforenafter/Chandelier/ai.webp"
     ],
+    afterVideo: "/images/beforenafter/Chandelier/chandelier_reel.mp4",
+    videoTitle: "Completed Jubail Island 5M Chandelier Installation Reel",
     gallery: [
       "/images/beforenafter/Chandelier/ai.webp",
       "/images/beforenafter/Chandelier/b1.webp",
@@ -266,144 +268,7 @@ export const PROJECTS = [
       "/images/beforenafter/bathroom3/before_3.jpg"
     ]
   },
-  {
-    id: "commercial-tower-amc-reem",
-    title: "Commercial Tower Total AMC & Facilities Care",
-    category: "maintenance",
-    categoryName: "Property Maintenance & AMC",
-    location: "Al Reem Island, Abu Dhabi",
-    client: "Prime Commercial Real Estate Group",
-    year: "Ongoing (2023 - Present)",
-    duration: "Multi-Year AMC",
-    area: "34 Floors / 450,000 sq.ft",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-    featured: true,
-    size: "normal",
-    shortDesc: "Full comprehensive Annual Maintenance Contract covering central chillers, high-speed elevators, fire alarm systems, and 24/7 on-site technical teams.",
-    challenge: "Maintaining continuous 100% operational uptime for 80+ tenant corporate offices with strict noise and response SLAs.",
-    solution: "Stationed 24/7 dedicated certified MEP technician crew with computerized CAFM ticket tracking and automated preventive scheduling.",
-    scope: [
-      "24/7 On-site MEP engineering & rapid helpdesk",
-      "Quarterly chiller plant, pumps, and VAV box balancing",
-      "Elevator compliance & Civil Defense safety audits",
-      "Power factor correction and electrical distribution upkeep"
-    ]
-  },
-  {
-    id: "executive-office-fitout",
-    title: "Executive Corporate HQ Turnkey Interior Fit-Out",
-    category: "fitout",
-    categoryName: "Interior & Fit-Out",
-    location: "Al Maryah Island, Abu Dhabi",
-    client: "Financial Services Group",
-    year: "2024",
-    duration: "4 Months",
-    area: "8,200 sq.ft",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    featured: true,
-    size: "normal",
-    shortDesc: "Complete high-spec corporate fit-out with acoustic glass partitions, fluted oak paneling, ergonomic workstations, and automated circadian lighting.",
-    challenge: "Fast-track execution within an active business tower without disrupting surrounding tenants.",
-    solution: "Off-site CNC joinery prefabrication and silent night-shift installations with zero tolerance defect inspection.",
-    scope: [
-      "Acoustic double-glazed frameless office partitions",
-      "Bespoke boardroom conference table & custom credenzas",
-      "Linear magnetic track lighting & smart DALI controls",
-      "Authority approvals (Abu Dhabi ADGM / Civil Defense)"
-    ]
-  },
-  {
-    id: "residential-compound-hvac-rehab",
-    title: "50-Villa Compound HVAC System Overhaul & PPM",
-    category: "hvac",
-    categoryName: "HVAC & MEP",
-    location: "Khalifa City, Abu Dhabi",
-    client: "Residential Compound Management",
-    year: "2023",
-    duration: "3 Months",
-    area: "50 Luxury Villas",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
-    featured: false,
-    size: "wide",
-    shortDesc: "Major overhaul of 150+ ducted split AC condensing units, deep coil decontamination, duct sanitization, and digital thermostat retrofits.",
-    challenge: "Severe coil degradation and reduced cooling efficiency caused by high summer heat and desert dust ingress.",
-    solution: "Chemical coil foam wash, anti-corrosive epoxy protective coating on aluminum fins, and duct thermal sealing reducing power usage by 22%.",
-    scope: [
-      "Complete chemical cleaning of 150 condenser & evaporator coils",
-      "Refrigerant leak detection, repair & charge balancing",
-      "Antimicrobial air duct sanitization",
-      "Wi-Fi smart thermostat installation for compound residents"
-    ]
-  },
-  {
-    id: "combo-roof-waterproofing-yas",
-    title: "Villa Compound Combo Roof Waterproofing & Thermal Insulation",
-    category: "waterproofing",
-    categoryName: "Waterproofing",
-    location: "Yas Island, Abu Dhabi",
-    client: "Asset Management Company",
-    year: "2024",
-    duration: "2 Months",
-    area: "35,000 sq.ft Roof Area",
-    image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80",
-    featured: false,
-    size: "normal",
-    shortDesc: "Complete Abu Dhabi Municipality-approved Combo Roof PU foam insulation, liquid waterproofing membrane, and flood testing with 10-year warranty.",
-    challenge: "Rectifying previous recurring rainwater leaks across flat concrete roofs before the winter season.",
-    solution: "Complete removal of damaged old layers, high-density spray polyurethane foam application, elastomeric UV topcoat, and 48-hour standing water testing.",
-    scope: [
-      "Sprayed polyurethane foam for thermal insulation (U-value compliant)",
-      "Liquid-applied acrylic UV protective coating",
-      "Geotextile fabric & screed layer with slope correction",
-      "10-Year official leak-proof warranty issued"
-    ]
-  },
-  {
-    id: "luxury-villa-kitchen-renovation",
-    title: "Bespoke Modern Kitchen & Cabinetry Renovation",
-    category: "fitout",
-    categoryName: "Interior & Fit-Out",
-    location: "Al Raha Beach, Abu Dhabi",
-    client: "Private Residence",
-    year: "2024",
-    duration: "5 Weeks",
-    area: "650 sq.ft",
-    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1200&q=80",
-    featured: false,
-    size: "normal",
-    shortDesc: "Full contemporary open-plan kitchen remodel featuring matte anti-fingerprint cabinetry, Calacatta quartz waterfall island, and hidden breakfast bar.",
-    challenge: "Reconfiguring existing MEP plumbing and gas conduits into a modern island layout without affecting structural floor slabs.",
-    solution: "Laser scanning, raised screed conduit channels, and custom Blum motorized pull-outs with under-cabinet warm 3000K LED lighting.",
-    scope: [
-      "Custom German-hardware cabinetry & soft-close systems",
-      "Calacatta gold quartz seamless countertops & backsplash",
-      "Integrated smart appliances & hidden extractor hood",
-      "Dedicated heavy-duty dirty kitchen aluminum storage"
-    ]
-  },
-  {
-    id: "hotel-lobby-marble-renovation",
-    title: "Five-Star Hotel Marble Restoration & Tile Installation",
-    category: "construction",
-    categoryName: "Construction & Civil",
-    location: "Corniche Road, Abu Dhabi",
-    client: "Hospitality Landmark",
-    year: "2023",
-    duration: "6 Weeks",
-    area: "14,000 sq.ft",
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
-    featured: false,
-    size: "normal",
-    shortDesc: "Precision installation and diamond polishing of large-format Italian Statuario marble slabs in the grand lobby and reception zones.",
-    challenge: "Carrying out high-precision stone installation during operational hotel hours with strict zero-dust protocols.",
-    solution: "Negative-pressure dust containment enclosures and diamond rotary planetary polishing machines operating during low-traffic windows.",
-    scope: [
-      "Laser-guided marble alignment and bookmatching",
-      "Diamond pad grinding and high-gloss crystallization",
-      "Epoxy seamless joint filling matching stone veins",
-      "Anti-stain nano-impregnation sealant application"
-    ]
-  }
+
 ];
 
 // Interactive Before / After comparisons
@@ -453,6 +318,7 @@ export const BEFORE_AFTER_SHOWCASE = [
     description: "Specialized high-ceiling structural chandelier installation (5-meter height) in an ultra-luxury private residence on Jubail Island, Abu Dhabi. Encompassed ceiling load-bearing structural reinforcement, heavy-duty motorized winch hoisting, specialized electrical conduit routing, and bespoke crystal alignment.",
     beforeImage: "/images/beforenafter/Chandelier/b1.webp",
     afterImage: "/images/beforenafter/Chandelier/ai.webp",
+    afterVideo: "/images/beforenafter/Chandelier/chandelier_reel.mp4",
     details: [
       "5-Meter high-reach structural ceiling anchoring & load testing",
       "Motorized winch hoisting system for maintenance access",
